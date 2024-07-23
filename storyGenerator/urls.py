@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from storyGenerator import views
+from story import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',  views.generate_story, name='generate_story'),
+    #path('', views.homepage, name='homepage'),
+    #path('generate-story/', generate_story, name='generate_story'),
 ]

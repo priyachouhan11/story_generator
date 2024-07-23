@@ -1,0 +1,116 @@
+<!-- story_template.html -->
+
+<html>
+<head>
+    <title>Story</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+      body{
+        width: 100%;
+        height: 100%;
+      }
+    .logo_i {
+    color: #88f48d;
+      }
+    .logo_l {
+    color: #ff9b9b;
+      }
+    .logo_b {
+    color: #afb6ff;
+      }
+      .logo_image{
+        width: 30px;
+        height: 30px;
+        
+      }
+      .title{
+        white-space: nowrap;
+        margin: 0;
+        font-size: 27px;
+        text-align: center;
+        font-weight: lighter;
+        color: #121010;
+        cursor: pointer;
+        font-family: lato, helvetica, arial, sans-serif;
+        margin-left: 35px;
+      }
+      .logo .title{
+        display: inline;
+      }
+
+      .image_section .story_image{
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
+      .story_section{
+        width: 50%;
+        height: 500px;
+        float: right;
+        text-align: center;
+        font-size: 35px;
+        font-family: sans-serif;
+        font-style: normal;
+        text-decoration: auto;
+        text-decoration-color: black;
+        text-wrap: balance;
+        flex: 1 1 50%;
+      }
+
+
+  
+    </style>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="#" class="title_and_logo" >
+              <img class="logo_image" src="https://libraryofshortstories.s3.ap-southeast-2.amazonaws.com/small/books-180x180.png" alt="logo img" class="logo">
+              <div class="title">
+                <span class="logo_l">L</span>
+                <span class="logo_i">i</span>
+                <span class="logo_b">b</span>
+                rary of short stories
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+   <main>
+    <section class="image_section">
+      <div class="image">
+        <img src="/static/image/open-book-with-fairytale-scene.png" alt="" class="story_image">
+      </div>
+    </section>
+    <section class="story_section">
+      <div>
+        <p>{{ story }}</p>
+      </div>
+    </section>
+   </main>
+   <footer>
+    <span class="copyright">&#169; Story . All rights reserved. by PC</a></span>
+   </footer>
+
+   <!-- Main JS -->
+  <script type="text/javascript" src="/static/js/jquery-main.js"></script>
+
+  <!-- Bootstrap JS -->
+  <!-- <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+   Animation JS 
+  <script type="text/javascript" src="/static/js/wow.min.js"></script> -->
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="/static/js/custom.js"></script>
+
+</body>
+</html>
